@@ -22,7 +22,7 @@ API.use(cors({ origin: "https://password-reset-app-1.netlify.app" }))
 
 //Conform to Working API;
 API.get("/", function (req, res) {
-    res.send('Never Give Up..')
+    res.send('<h1>Never Give Up..</h1>')
 });
 
 
