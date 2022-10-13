@@ -111,13 +111,13 @@ API.post("/Reset", async function (req, res) {
         var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user:"rowdyram779@gmail.com",
+                user:Form,
                 pass:PASSWORD
             }
         });
 
         var mailOptions = {
-            from:"rowdyram779@gmail.com",
+            from:FROM,
             to: Email,
             subject: 'Password Reset',
             text:"Click this Link Reset Your Password",
