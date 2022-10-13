@@ -111,7 +111,7 @@ API.post("/Reset", async function (req, res) {
         var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user:Form,
+                user:FROM,
                 pass:PASSWORD
             }
         });
